@@ -3,11 +3,11 @@ package com.cydeo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Team {
+public class Team<T extends Player> { //Any class you can to Team. Should accept only Player class and subclasses
 
     private String name;
 
-    private List<Player> members = new ArrayList<Player>();//polymorphism that's why we used player instead of String
+    private List<T> members = new ArrayList<T>();//polymorphism that's why we used player instead of String
 
     public Team(String name) {
         this.name = name;
@@ -17,13 +17,13 @@ public class Team {
         return name;
     }
 
-    public boolean addPlayer(Player player){
+    public boolean addPlayer(T player){
         if (members.contains(player)){
-            System.out.println(player.getName() + " is already on the team");
+            System.out.println(((Player)player).getName() + " is already on the team");
             return false;
         }else{
             members.add(player);
-            System.out.println(player.getName() + " picked for team" + this.name);
+            System.out.println(((Player)player).getName() + " picked for team" + this.name);
             return true;
         }
     }
