@@ -7,8 +7,8 @@ public class CountTest {
 
         List<Integer> ci = Arrays.asList(1, 2, 3, 4);
         int count = countIf(ci, new OddPredicate());//implementing new OddPredicate
-        //int count2 = countIf(ci, new EvenPredicate());// implementing new EvenPredicate
         System.out.println("Number of odd integers = " + count);
+
 
 //     Why I need generic??
 
