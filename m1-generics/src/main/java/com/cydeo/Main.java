@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList <Integer> items = new ArrayList<Integer>();//<generics>Arrays list only accepts objects belongs to int
+        ArrayList<Integer> items = new ArrayList<Integer>();//<generics>Arrays list only accepts objects belongs to int
         items.add(1);
         items.add(2);
         items.add(3);
@@ -21,31 +21,17 @@ public class Main {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
-        Team <SoccerPlayer>liverpool = new Team("Liverpool");//Team accepting any object
+        Team<SoccerPlayer> liverpool = new Team("Liverpool");//Team accepting any object
 //        liverpool.addPlayer(joe);
 //        liverpool.addPlayer(pat);
         liverpool.addPlayer(beckham);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
-    private static void printDoubled(ArrayList<Integer> items){
-        for (int i : items){
-            System.out.println(i*2);
+    private static void printDoubled(ArrayList<Integer> items) {
+        for (int i : items) {
+            System.out.println(i * 2);
         }
     }
 }
