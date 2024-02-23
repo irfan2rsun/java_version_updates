@@ -23,6 +23,7 @@ public class AppleTest {
         List<Apple> greenApple = filterApples(inventory,new AppleGreenColorPredicate());
         System.out.println(greenApple);
 
+                            //Type Inference if there is only one parameter we don't need it. No need to put type.
         ApplePredicate weightApple = apple -> apple.getWeight()>200;
         filterApples(inventory,weightApple);
 
