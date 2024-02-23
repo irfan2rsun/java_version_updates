@@ -1,4 +1,4 @@
-package com.cydeo.helpzfarmer;
+package com.cydeo;
 
 public class AppleGreenColorPredicate implements ApplePredicate{
     @Override

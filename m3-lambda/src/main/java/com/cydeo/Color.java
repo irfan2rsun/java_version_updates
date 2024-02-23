@@ -1,4 +1,4 @@
-package com.cydeo.helpzfarmer;
+package com.cydeo;
 
 public enum Color {
     RED,GREEN
